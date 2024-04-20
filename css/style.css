@@ -1,0 +1,185 @@
+/* Variáveis de cores para temas claro e escuro */
+:root {
+  --link-color-light: blue; /* Cor dos links no tema claro */
+  /* --link-color-dark: orange; Cor dos links no tema escuro */
+  --text-color: black;
+  --background-color: white;
+  --header-footer-bg: #2a69ad;
+  --main-bg: #dddbdb;
+  --aside-bg: #f4f4f4;
+}
+
+.dark-mode {
+  --text-color: white;
+  --background-color: #333;
+  --header-footer-bg: #1a1a1a;
+  --main-bg: #242424;
+  --aside-bg: #2a2a2a;
+}
+
+/* Estilos base */
+body {
+  background-image: url('img/1.jfif.jpg');
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.bg-primary{
+  border-bottom: 2px solid orange;
+}
+
+button {
+  color: white;
+  background-color: #1a1a1a;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 5px 20px;
+  border-left: 2px solid rgb(255, 255, 255);
+  border-radius: 40px;
+  margin: 5px;
+}
+
+header, footer {
+  background-color: var(--header-footer-bg);
+  color: #ffffff;
+  padding: 1rem;
+  text-align: center;
+}
+
+h1, h2, h3 {
+  font-family: verdana;
+}
+
+h1 {
+  font-size: 30px;
+  margin-top: 30px;
+}
+
+h3 {
+  font-size: 22px;
+  margin-top: 40px;
+}
+
+.desconto {
+  font-size: 20px;
+  font-family: tahoma;
+  border: 1px solid red;
+  width: 100px;
+  padding: 5px 20px;
+  border-radius: 5px 20px;
+  background-color: red;
+  color: yellow;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  background-color: var(--main-bg);
+}
+
+aside {
+  width: 20%;
+  background-color: var(--aside-bg);
+  padding: 1rem;
+}
+
+section {
+  border: 2px solid black;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.tela {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background-color: blue;
+  text-decoration: none;
+  padding: 5px 20px;
+  border-left: 2px solid black;
+  border-radius: 40px;
+  margin: 5px;
+}
+
+#idSection ul, li, a {
+  text-decoration: none;
+}
+
+/* img {
+  border-radius:40px;
+  display: block; 
+  margin-left: auto; 
+  margin-right: auto; 
+  width: 60%; 
+  height: 50%; 
+} */
+
+.one-img{
+  padding-top: 30px;
+}
+
+.div-img {
+  height: 300px;
+  width: 805px;
+  border-radius: 10px;
+}
+
+.div2-img {
+  height: 300px;
+  width: 400px;
+  border-radius: 10px;
+  margin: 1px;
+}
+
+.two-img {
+  
+  padding-top: 50px;
+}
+
+/* Aplica a cor do link do tema escuro quando o dark mode está ativo */
+.dark-mode a {
+  color: var(--link-color-dark);
+}
+
+/* Interruptor de alternância para mudar entre temas claro e escuro */
+.toggle-switch {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+}
+
+/* Clearfix para elementos flutuantes */
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.btn-primary {
+  color: rgb(255, 255, 255);
+  background-color: #0044ff;
+  /* border: 2px solid rgb(0, 0, 0); */
+  border-radius: 10px;
+  padding: 2px 12px;
+}
+
+h5 {
+  padding-bottom: 00px;
+}
+
+.card-text {
+  font-family: arial;
+  font-size: 16px;
+}
+
+.list-group-item {
+  font-family: arial;
+  color: black;
+  font-size: 16px;
+  text-decoration: none;
+}
